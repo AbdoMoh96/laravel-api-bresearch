@@ -18,7 +18,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call( ClientTypesSeeder::class);
-        $this->call(InstitutionsSeeder::class);
         Clients::factory()->count(40)->has(Email::factory()->count(2))->create();
         $this->call(GroupSeeder::class);
     }

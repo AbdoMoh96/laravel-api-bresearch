@@ -103,7 +103,6 @@ class ClientRepository implements ClientsRepositoryInterface
         $client->title = $data['title'];
         $client->country = $data['country'];
         $client->notes = $data['notes'];
-        $client->institution_id = $data['institution_id'];
         return $client;
     }
 

@@ -24,7 +24,6 @@ class CreateClientsTable extends Migration
             $table->string('title' , 250)->nullable();
             $table->string('country' , 250);
             $table->text('notes')->nullable();
-            $table->integer('institution_id' , false , true)->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

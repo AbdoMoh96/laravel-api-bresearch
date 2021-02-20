@@ -6,7 +6,6 @@ use App\Http\Controllers\Admin\Api\ClientsController;
 use App\Http\Controllers\Admin\Api\GroupsController;
 use App\Http\Controllers\Admin\Api\ClientsEmailController;
 use App\Http\Controllers\Admin\Api\ClientTypeController;
-use App\Http\Controllers\Admin\Api\InstitutionController;
 /*******************************************
  **************=Admin===routs=***************
  *******************************************/
@@ -39,7 +38,3 @@ use App\Http\Controllers\Admin\Api\InstitutionController;
 /*<===============Client=Types=Routs==================>*/
  Route::resource('types' , ClientTypeController::class)->except('create' , 'edit');
 /*<===========end=Client=Types=Routs==================>*/
-
-/*<===============Institutions=Routs==================>*/
- Route::resource('institutions' , InstitutionController::class)->except('create' , 'edit');
-/*<===========end=Institutions=Routs==================>*/

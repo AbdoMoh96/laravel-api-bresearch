@@ -31,7 +31,6 @@ class ClientsFactory extends Factory
             'title' => $this->faker->jobTitle,
             'country' => $this->faker->country,
             'notes' => $this->faker->paragraph,
-            'institution_id' => $this->faker->numberBetween(1 , 4)
         ];
     }
 }

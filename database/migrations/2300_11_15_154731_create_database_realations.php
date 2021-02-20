@@ -22,11 +22,6 @@ class CreateDatabaseRealations extends Migration
                 ->on('client_types')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
-            $table->foreign('institution_id')
-                ->references('id')
-                ->on('institutions')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
         });
 
         Schema::table('clients_email', function (Blueprint $table) {

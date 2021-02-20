@@ -19,7 +19,7 @@ class ClientsUpdateRequest extends FormRequest
     public function messages()
     {
         return [
-            'is_active.boolean' => 'is active must be (online or offline)'
+
         ];
     }
 
@@ -40,7 +40,6 @@ class ClientsUpdateRequest extends FormRequest
             'title' => 'required|max:250',
             'country' => 'required|max:250',
             'notes' => 'required',
-            'institution_id' => 'int|required'
         ];
     }
 }
